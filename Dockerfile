@@ -13,7 +13,7 @@ RUN npm install
 COPY . .
 
 # Notify about listening port
-EXPOSE 8000
+EXPOSE 8080
 
 # Project start
 CMD ["node", "index.js"]
