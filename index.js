@@ -8,8 +8,8 @@ const server = jsonServer.create()
 const router = jsonServer.router(path.resolve(__dirname, 'db.json'))
 
 const options = {
-  key: fs.readFileSync(path.resolve(__dirname, 'key.pem')),
-  cert: fs.readFileSync(path.resolve(__dirname, 'cert.pem')),
+  key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
+  cert: fs.readFileSync(path.resolve(__dirname, 'server.cert')),
 }
 
 
